@@ -4,6 +4,11 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1"
   },
   "scripts": {
