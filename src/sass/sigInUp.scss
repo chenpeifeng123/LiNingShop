@@ -1,0 +1,156 @@
+@import "./public.scss";
+
+body {
+    background-color: #f5f5f5;
+}
+
+#signIn {
+    width: 900px;
+    height: 530px;
+    background-color: #fff;
+    margin: auto;
+    padding: 80px 90px 0;
+
+    h1 {
+        color: #333;
+        height: 78px;
+        line-height: 78px;
+        border-bottom: 1px dashed #e2e2e2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        width: 800px;
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .inTop {
+        a {
+
+            float: left;
+            width: 404px;
+            cursor: pointer;
+            height: 58px;
+            line-height: 66px;
+            text-align: center;
+            box-sizing: border-box;
+            font-weight: bold;
+            border-bottom: 5px solid #e2e2e2;
+            color: #a9a9a9;
+
+            &.active {
+                color: #333;
+                border-bottom: 5px solid #ee2737 !important;
+            }
+        }
+    }
+
+    .form {
+        clear: both;
+        color: #333;
+        width: 374px;
+        margin: 0 auto 12px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        label {
+            display: block;
+            margin-bottom: 20px;
+            width: 650px;
+            input {
+                border: 1px solid #e2e2e2;
+                box-sizing: border-box;
+                width: 374px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                padding-left: 16px;
+                color: #555;
+                outline: none;
+                &+span{
+                    color: #f33;
+                    font-size: 14px;
+                    float: right;
+                    margin: 13px 12px 0 0;
+                   
+                    width: 250px;
+                    display: none;
+                }
+                &.inpSuccess{
+                    border-color: tomato;
+                }
+                &.inpFail{
+                    border-color: green;
+                }
+            }
+          
+        }
+        label[for=vCode]{
+            position: relative;
+            width: auto;
+            span{
+                position: absolute;
+                right: -276px;
+                top: 0;
+            }
+        }
+        .codeText{
+            position: absolute;
+            right: 7px;
+            border: 1px solid #666;
+            top: 6px;
+            text-align: center;
+            line-height: 33px;
+            color: purple;
+            width: 85px;
+            height: 33px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .sing1 {
+            color: #808080;
+            font-size: 15px;
+            box-sizing: border-box;
+
+            span {
+                display: block;
+                margin: 0 auto 22px;
+                cursor: pointer;
+            }
+        }
+
+        .signInBn {
+            clear: both;
+            background: #ee2737;
+            color: #FFFFFF;
+            display: block;
+            font-size: 18px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            width: 374px;
+            border: none;
+            margin: 0 auto 22px;
+            outline: none;
+        }
+
+        .agree {
+            font: 12px/1.23 Arial, "宋体", Helvetica, sans-serif;
+            color: rgb(51, 51, 51);
+
+            em {
+                color: rgb(238, 39, 55);
+                font-style: normal;
+            }
+        }
+    }
+    .otherIn {
+        width: 374px;
+        margin: 0 auto 12px;
+        box-sizing: border-box;
+        font-size: 15px;
+       span{
+        color: #808080;
+           display: block;
+       }
+    }
+}

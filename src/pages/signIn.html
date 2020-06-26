@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./../css/sigInUp.css">
+</head>
+<body>
+    <div>
+        <iframe src="./header.html" id="headers" frameborder="0" scrolling="No"></iframe>
+    </div>
+    <div id="signIn">
+        <h1>会员登录</h1>
+        <div class="inTop">
+            <a href="#">账户登录</a>
+            <a href="#">手机登录</a>
+        </div>
+        <div class="form">
+            <label for="user">
+                <input type="text" id="user" name="user" placeholder="用户名/手机号" ><span></span>
+            </label>
+            <label for="pwd">
+                <input type="password" id="pwd" name="pwd" placeholder="密码" ><span></span>
+            </label>
+         
+            <label for="vCode">
+                <input type="text" id="vCode" class="vCode"  placeholder="验证码"><span></span>
+                <a class="codeText"></a>
+            </label>
+            <p class="sing1">
+                <span class="l">找回密码?</span>
+                <span class="r">注册新用户</span>
+            </p>
+            <button class="signInBn"> 登录 </button>
+            <p class="agree">
+                <span>点击登录, 即代表已阅读并同意 <em>《李宁官网网站隐私政策及服务协议》</em></span>
+            </p>
+        </div>
+        <div class="otherIn">
+            <span>其他账号登录</span>
+        </div>
+    </div>
+    <div >
+        <iframe src="./footer.html"  id="ft" frameborder="0" scrolling="No"></iframe>
+    </div>
+    <script src="./../../node_modules/jquery/dist/jquery.js"></script>
+    <script type="module">
+        $(".inTop>a").eq(0).addClass("active")
+        $(".inTop").click("a",function(e){
+            $(e.target).addClass("active").siblings().removeClass("active")
+        });
+        import Login from "./../js/login.js";
+        new Login();
+    </script>
+</body>
+</html>

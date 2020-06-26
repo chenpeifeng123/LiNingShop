@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
+
 <body>
-    
+    <div>
+        <iframe src="./pages/header.html" id="headers" frameborder="0" scrolling="No"></iframe>
+    </div>
+    <!-- banner开始 -->
+    <div id="banner">
+        <img src="./images/banner.jpg" alt="" />
+    </div>
+    <!-- banner结束 -->
+    <!-- main开始 -->
+    <div id="main">
+        <!-- 轮播图 -->
+        <div class="main_lbt">
+            <div class="lbt"></div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="main_yhj"></div>
+        <div class="main_list1">
+        </div>
+        <!-- 切换商品列表 -->
+        <div class="main_tab">
+        </div>
+        <div class="main_Bottom">
+        </div>
+    </div>
+    <!-- main结束 -->
+    <div >
+        <iframe src="./pages/footer.html"  id="ft" frameborder="0" scrolling="No"></iframe>
+    </div>
 </body>
+<script src="./../node_modules/jquery/dist/jquery.js"></script>
+<script type="module">
+    import ShopIndex from "./js/index.js";
+    import Carousel from "./js/carousel.js";
+    $.ajax({
+        url:"./../server/shopLlist.php",
+        success:function(data){
+            new Carousel(data.lbt,$(".lbt"))
+            let s=new ShopIndex()
+            s.createList(data.shop1,$(".main_list1"))
+            s.createTab($(".main_tab"),data.tab1,data.tab2)
+        }
+    })
+</script>
 </html>

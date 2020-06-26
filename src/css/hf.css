@@ -1,0 +1,348 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+#headers, #footers {
+  width: 100%;
+}
+
+#headers {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#footers {
+  height: 350px;
+}
+
+.con-f, #header .headerTop {
+  width: 100%;
+}
+
+#header .headerTop {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+}
+
+#header .headerTop .headLeft {
+  float: left;
+  margin-left: 25px;
+  height: 30px;
+  line-height: 30px;
+  min-width: 400px;
+}
+
+#header .headerTop .headLeft h1 {
+  width: 90px;
+  height: 10px;
+  background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat 0 -92px;
+  vertical-align: middle;
+  margin: 10px 15px 10px 0;
+  float: left;
+}
+
+#header .headerTop .headLeft .headUl {
+  height: 30px;
+  float: left;
+}
+
+#header .headerTop .headLeft .headUl li {
+  float: left;
+}
+
+#header .headerTop .headLeft .headUl li a {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#header .headerTop .headLeft .headUl li:last-child a {
+  background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat -166px 0;
+  float: left;
+  width: 6px;
+  height: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+#header .headerTop .headRight {
+  user-select: none;
+  font-size: 12px;
+}
+
+#header .headerTop .headRight li {
+  float: left;
+  line-height: 30px;
+}
+
+#header .headerTop .headRight li:last-child {
+  padding-right: 45px;
+}
+
+#header .nav {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+#header .nav h2 {
+  width: 53px;
+  height: 14px;
+  margin: 18px 20px;
+  background-image: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png");
+  background-repeat: no-repeat;
+  background-position: -166px -41px;
+  float: left;
+}
+
+#header .nav ul {
+  height: 50px;
+  float: left;
+}
+
+#header .nav ul li {
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  line-height: 50px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+#header .nav ul li:hover {
+  background-color: snow;
+  color: #f33;
+}
+
+#header .nav ul li:hover:first-child::after {
+  background-position-x: -173px;
+}
+
+#header .nav ul li:first-child::after {
+  content: "";
+  float: right;
+  width: 7px;
+  height: 4px;
+  background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat;
+  margin: 22px 0 21px 5px;
+  background-position: -166px -14px;
+}
+
+#header .nav ul .wd::before {
+  content: "";
+  background: url("./../images/wd.png") no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: relative;
+  top: 7px;
+  left: -5px;
+  background-position: 0 0;
+}
+
+#header .nav ul .wd:hover::before {
+  background-position: -24px 0;
+}
+
+#header .nav em {
+  background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/fax_hot.gif") no-repeat;
+  width: 59px;
+  height: 45px;
+  position: absolute;
+  top: -3px;
+  right: 300px;
+}
+
+#header .nav .search {
+  float: right;
+  margin: 10px 20px 0 0;
+}
+
+#header .nav .search .boNone, #header .nav .search input, #header .nav .search button {
+  border: none;
+  outline: none;
+  height: 25px;
+  float: left;
+  font-size: 12px;
+}
+
+#header .nav .search input {
+  font-style: oblique;
+  text-indent: 5px;
+}
+
+#header .nav .search button {
+  padding: 5px;
+  background-color: #f33;
+  color: #fff;
+}
+
+#footer {
+  width: 1200px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  margin: 0px auto;
+}
+
+#footer .footTop {
+  height: 90px;
+}
+
+#footer .footTop .footImg {
+  width: 46px;
+  height: 46px;
+  margin: 0px 16px 6px 14px;
+  float: left;
+  background: url("./../images/foot.png") no-repeat;
+  overflow: hidden;
+}
+
+#footer .footTop ul {
+  width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#footer .footTop ul li .footText {
+  width: 105px;
+  height: 45px;
+  border-left: 1px solid #2d2a26;
+  float: left;
+}
+
+#footer .footTop ul li .footText span {
+  display: block;
+  width: 95px;
+  height: 26px;
+  margin-left: 20px;
+  line-height: 26px;
+  color: #575551;
+  font-size: 20px;
+}
+
+#footer .footTop ul li .footText a {
+  color: #575551;
+  line-height: 19px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "宋体";
+  width: 95px;
+  height: 19px;
+  margin-left: 20px;
+}
+
+#footer .footTop ul li .footText a:hover {
+  color: #f33;
+}
+
+#footer .footTop ul .f_li0 .footImg {
+  background-position: 0px 0;
+}
+
+#footer .footTop ul .f_li1 .footImg {
+  background-position: -47px 0;
+}
+
+#footer .footTop ul .f_li2 .footImg {
+  background-position: -94px 0;
+}
+
+#footer .footTop ul .f_li3 .footImg {
+  background-position: -141px 0;
+}
+
+#footer .footTop ul .f_li4 .footImg {
+  width: 49px;
+  height: 49px;
+  background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_footer_002.png") no-repeat 0 0;
+}
+
+#footer .footBody .t, #footer .footBody .text p, #footer .footBody .text span, #footer .footBody ul li {
+  color: #969492;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#footer .footBody .text .boxian {
+  width: 500px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+#footer .footBody .text p {
+  padding-top: 10px;
+  margin-left: 16px;
+}
+
+#footer .footBody .text span {
+  display: block;
+}
+
+#footer .footBody ul {
+  margin-left: 26%;
+}
+
+#footer .footBody ul li {
+  border-right: 1px solid #4d4d4d;
+  padding: 0 15px;
+  float: left;
+  line-height: 16px;
+}
+
+#footer .footBody ul li:hover {
+  color: #f33;
+  cursor: pointer;
+}
+
+#footer .footBody ul li:last-child {
+  border: none;
+}
+
+#footer .footBody .footImage {
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+}

@@ -1,8 +1,16 @@
 {
+    "lbt":[
+
+        "./images/c1.jpg",
+        "./images/c2.jpg",
+        "./images/c3.jpg",
+        "./images/c4.jpg",
+        "./images/c5.jpg"
+
+     
+    ],
     "shop1": [
-        {
-            "bgSrc": "https://cdns.lining.com/postsystem/docroot/images/cps/hwz/2020ksj/1/pc_05.jpg"
-        },
+     
         {
             "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201905/480210/display_480210_1.jpg",
             "info": "星球大战联名系列男子短袖文化衫",
@@ -55,6 +63,7 @@
         }
     ],
     "tab1": [
+        "男生",
         {
             "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202005/567330/display_567330_1.jpg",
             "info": "李宁CF The one系列漫游音浪男子经典...",
@@ -114,39 +123,10 @@
             "info": "迪士尼米奇联名款男女同款宽松短袖文化衫",
             "price": "138",
             "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202001/525773/display_525773_1.jpg",
-            "info": "篮球系列男子短卫裤",
-            "price": "98",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202002/536708/display_536708_1.jpg",
-            "info": "运动时尚系列男子收口七分运动裤",
-            "price": "118",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202005/569519/display_569519_1.jpg",
-            "info": "训练系列男子运动短裤",
-            "price": "58",
-            "cutPrice": "11"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201908/497795/display_497795_1.jpg",
-            "info": "运动时尚系列男子收口运动长裤",
-            "price": "118",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202002/530392/display_530392_1.jpg",
-            "info": "李宁CF顽世不功男女同款收口宽松运动长裤",
-            "price": "298",
-            "cutPrice": "41"
         }
     ],
     "tab2": [
+        "女生",
         {
             "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202003/538758/display_538758_1.jpg",
             "info": "李宁CF Contrarian 2020女子...",
@@ -206,36 +186,6 @@
             "info": "BAD FIVE篮球系列女子短袖文化衫",
             "price": "68",
             "cutPrice": "11"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201908/498186/display_498186_1.jpg",
-            "info": "训练系列女子收口卫裤",
-            "price": "98",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201703/309484/display_309484_1.jpg",
-            "info": "训练系列女子收口卫裤",
-            "price": "98",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201902/461483/display_461483_1.jpg",
-            "info": "复古运动米奇系列女子收口卫裤",
-            "price": "138",
-            "cutPrice": "21"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202001/529227/display_529227_1.jpg",
-            "info": "迪士尼米奇联名款女子平口运动长裤",
-            "price": "198",
-            "cutPrice": "41"
-        },
-        {
-            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202004/558151/display_558151_1.jpg",
-            "info": "运动时尚系列女子收口宽松运动长裤",
-            "price": "178",
-            "cutPrice": "21"
         }
     ]
 }

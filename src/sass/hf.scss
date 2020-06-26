@@ -1,0 +1,327 @@
+$hig1:30px;
+@import "./public.scss";
+
+.con-f {
+    width: 100%;
+}
+
+#header {
+    .headerTop {
+        @extend .con-f;
+        width: 100%;
+        height: $hig1;
+        background-color: #fff;
+
+        .headLeft {
+            float: left;
+            margin-left: 25px;
+            height: 30px;
+            line-height: 30px;
+            min-width: 400px;
+
+            h1 {
+                width: 90px;
+                height: 10px;
+                background: url('https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png') no-repeat 0 -92px;
+                vertical-align: middle;
+                margin: 10px 15px 10px 0;
+                float: left;
+            }
+
+            .headUl {
+                height: $hig1;
+                float: left;
+
+                li {
+                    float: left;
+                  a{
+                    height: $hig1;
+                    line-height: $hig1;
+                    padding: 0 5px;
+                    display: inline-block;
+                    font-size: 12px;
+                  }
+                }
+
+                li:last-child a{
+                    background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat -166px 0;
+                    float: left;
+                    width: 6px;
+                    height: 13px;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    border: none;
+                }
+
+
+            }
+        }
+
+        .headRight {
+            user-select: none;
+            font-size: 12px;
+
+            li {
+                float: left;
+                line-height: 30px;
+
+                &:last-child {
+                    padding-right: 45px;
+                }
+            }
+
+        }
+    }
+
+    .nav {
+        $hig: 50px;
+        width: 100%;
+        height: $hig;
+        background-color: #000;
+        overflow: hidden;
+        position: relative;
+
+        h2 {
+            width: 53px;
+            height: 14px;
+            margin: 18px 20px;
+            background-image: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png");
+            background-repeat: no-repeat;
+            background-position: -166px -41px;
+            float: left;
+        }
+
+        ul {
+            height: $hig;
+            float: left;
+
+            li {
+                float: left;
+                font-size: 14px;
+                color: #fff;
+                line-height: $hig;
+                padding: 0 16px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: snow;
+                    color: #f33;
+
+                    &:first-child::after {
+                        background-position-x: -173px;
+                    }
+                }
+
+                &:first-child::after {
+                    content: "";
+                    float: right;
+                    width: 7px;
+                    height: 4px;
+                    background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat;
+                    margin: 22px 0 21px 5px;
+                    background-position: -166px -14px;
+                }
+
+               
+            }
+            .wd::before{
+                content: "";
+                background: url("./../images/wd.png") no-repeat;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                position: relative;
+                top: 7px;
+                left: -5px;
+                background-position: 0 0;
+            }
+            .wd:hover::before{
+                background-position: -24px 0;
+            }
+        }
+
+        em {
+            background: url('https://cdns.lining.com/shop/lining/theme/xth2/images/comm/fax_hot.gif') no-repeat;
+            width: 59px;
+            height: 45px;
+            position: absolute;
+            top: -3px;
+            right: 300px;
+        }
+
+        .search {
+            .boNone {
+                border: none;
+                outline: none;
+                height: 25px;
+                float: left;
+                font-size: 12px;
+
+            }
+
+            float: right;
+            margin:10px 20px 0 0;
+
+            input {
+                @extend .boNone;
+                font-style: oblique;
+                text-indent: 5px;
+
+            }
+
+            button {
+                @extend .boNone;
+                padding: 5px;
+                background-color: #f33;
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+#footer {
+    width: 1200px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: 0px auto;
+
+    .footTop {
+        height: 90px;
+
+        .footImg {
+            width: 46px;
+            height: 46px;
+            margin: 0px 16px 6px 14px;
+            float: left;
+            background: url("./../images/foot.png") no-repeat;
+            overflow: hidden;
+        }
+
+        ul {
+            width: 1000px;
+
+            overflow: hidden;
+            margin: 0 auto;
+
+            li {
+                .footText {
+                    width: 105px;
+                    height: 45px;
+                    border-left: 1px solid #2d2a26;
+                    float: left;
+
+                    span {
+                        display: block;
+                        width: 95px;
+                        height: 26px;
+                        margin-left: 20px;
+                        line-height: 26px;
+                        color: #575551;
+                        font-size: 20px;
+                    }
+
+                    a {
+                        color: #575551;
+                        line-height: 19px;
+                        display: inline-block;
+                        font-size: 12px;
+                        font-family: "宋体";
+                        width: 95px;
+                        height: 19px;
+                        margin-left: 20px;
+
+                        &:hover {
+                            color: #f33
+                        }
+
+                    }
+                }
+            }
+
+            @each $x in 0,
+            1,
+            2,
+            3,
+            4 {
+                @if($x==4) {
+                    .f_li#{$x} {
+                        .footImg {
+                            width: 49px;
+                            height: 49px;
+                            background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_footer_002.png") no-repeat 0 0;
+                        }
+                    }
+                }
+
+                @else {
+                    .f_li#{$x} {
+                        .footImg {
+                            background-position: $x*-47px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footBody {
+        .t {
+            color: rgb(150, 148, 146);
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .text {
+            .boxian {
+                width: 500px;
+                height: 1px;
+                background-color: #ccc;
+                margin: 0 auto;
+            }
+
+            p {
+                @extend .t;
+                padding-top: 10px;
+                margin-left: 16px;
+            }
+
+            span {
+                @extend .t;
+                display: block;
+            }
+        }
+
+        ul {
+            margin-left: 26%;
+
+            li {
+                @extend .t;
+                border-right: 1px solid #4d4d4d;
+                padding: 0 15px;
+                float: left;
+                line-height: 16px;
+
+                &:hover {
+                    color: #f33;
+                    cursor: pointer;
+                }
+            }
+
+            li:last-child {
+                border: none;
+            }
+
+        }
+
+        .footImage {
+            clear: both;
+            text-align: center;
+            margin-top: 50px
+        }
+    }
+}
