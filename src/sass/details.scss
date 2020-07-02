@@ -1,0 +1,203 @@
+@import "./public.scss";
+
+#details {
+  width: 1096px;
+  margin: 100px auto 0;
+ 
+  overflow: hidden;
+  .detaBox {
+    width: 100%;
+    .dbLeft {
+      position: relative;
+      float: left;
+      width: 420px;
+      .maxImg {
+        width: 370px;
+        height: 370px;
+        cursor: crosshair;
+        margin: auto;
+        position: relative;
+        img {
+          width: 370px;
+        }
+        .moveBox {
+          width: 206px;
+          height: 183px;
+          //   background: rgba(255, 255, 170, 0.459);
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none;
+        }
+      }
+      .minImg {
+        height: 60px;
+        width: 370px;
+        margin: auto;
+
+        a {
+          float: left;
+          height: 60px;
+          margin: 0 5px 5px 0;
+          border: 1px solid #cfcece;
+          img {
+            width: 60px;
+          }
+        }
+      }
+      .hidImg {
+        z-index: 995;
+        position: absolute;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        text-align: center;
+        overflow: hidden;
+        top: 0;
+        left: 420px;
+        width: 370px;
+        height: 370px;
+        display: none;
+      }
+    }
+  }
+  .dbxian {
+    width: 1px;
+    border-right: 1px dotted #c7c7c7;
+    height: 370px;
+    float: left;
+    margin-top: 10px;
+  }
+  .dbRight {
+    float: left;
+    width: 516px;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 20px;
+    h3 {
+      padding: 10px 0 0px 20px;
+      color: #000;
+      width: 496px;
+      box-sizing: border-box;
+    }
+    i {
+      color: rgb(255, 0, 0);
+      font-size: 12px;
+      padding-left: 22px;
+    }
+    .priceBox {
+      color: #808080;
+      background: #f5f5f5;
+      position: relative;
+      margin: 10px 0 0 20px;
+      padding: 5px 10px;
+      font-size: 12px;
+      span {
+        margin: 7px 0;
+        display: block;
+        
+        em {
+          color: #ee2b3a;
+          font-size: 25px;
+          vertical-align: middle;
+          font-weight: bold;
+          display: inline-block;
+          &::first-letter {
+            font-size: 16px;
+          }
+        }
+      }
+      .oldPrice b{
+        text-decoration: line-through;
+        font-weight: 700;
+      }
+    }
+    .selSpan {
+      font-size: 12px;
+      clear: both;
+      color: #666;
+      display: block;
+      padding: 10px 0;
+    }
+    .selCol {
+      padding-left: 20px;
+      span {
+        @extend .selSpan;
+      }
+      img {
+        width: 60px;
+        border: 1px solid #cfcece;
+        margin-right: 6px;
+        cursor: pointer;
+        &:hover{
+          border-color: #f33;
+        }
+      }
+    }
+    .selRule {
+      padding-left: 20px;
+      span {
+        @extend .selSpan;
+        float: left;
+      }
+      .ruleNum{
+        color: #333;
+        font-size: 12px;
+        float: left;
+        li {
+          float: left;
+          cursor: pointer;
+          border: 1px solid #cfcece;
+          margin: 8px 5px 0 0;
+          padding: 3px;
+        }
+      }
+    }
+    .buyNum {
+      clear: both;
+      padding: 10px 0 0 20px;
+      font-size: 12px;
+      @mixin inpBn($w, $h) {
+        border: 1px solid #989898;
+        height: $h;
+        line-height: $h;
+        width: $w;
+      }
+      button {
+        @include inpBn(20px, 20px);
+        outline: none;
+      }
+      input {
+        @include inpBn(30px, 18px);
+        text-align: center;
+        
+      }
+      span {
+        color: #666;
+      }
+    }
+    .bns {
+      margin:10px 0 0 10px;
+      div {
+        border: none;
+        cursor: pointer;
+        height: 43px;
+        width: 144px;
+        margin: 10px 0 20px 10px;
+        float: left;
+        background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/goods/add_now_buy.png") no-repeat scroll 0 0 transparent;
+      }
+      .addCar{
+        background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/goods/add_shop_cart.png") no-repeat scroll 0 0 transparent;
+        background-color: #222;
+      }
+    }
+  }
+}
+#backTop{
+  position: fixed;
+  right: 0;
+  top: 0px;
+  color: #333;
+  user-select: none;
+  height: 100%;
+}

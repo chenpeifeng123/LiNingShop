@@ -26,6 +26,7 @@ $hig1:30px;
                 vertical-align: middle;
                 margin: 10px 15px 10px 0;
                 float: left;
+                cursor: pointer;
             }
 
             .headUl {
@@ -34,6 +35,10 @@ $hig1:30px;
 
                 li {
                     float: left;
+                    &:first-child a{
+                        color:#f33;
+                        margin-right: 3px;
+                    }
                   a{
                     height: $hig1;
                     line-height: $hig1;
@@ -52,8 +57,16 @@ $hig1:30px;
                     margin-right: 10px;
                     border: none;
                 }
-
-
+                .logOff{
+                    display: none;
+                    margin-right: 3px;
+                }
+            }
+            .cartCount{
+                position: absolute;
+                left: 290px;
+                top: 1px;
+                font-size: 12px;
             }
         }
 
@@ -80,7 +93,6 @@ $hig1:30px;
         background-color: #000;
         overflow: hidden;
         position: relative;
-
         h2 {
             width: 53px;
             height: 14px;
@@ -94,7 +106,6 @@ $hig1:30px;
         ul {
             height: $hig;
             float: left;
-
             li {
                 float: left;
                 font-size: 14px;
@@ -102,7 +113,6 @@ $hig1:30px;
                 line-height: $hig;
                 padding: 0 16px;
                 cursor: pointer;
-
                 &:hover {
                     background-color: snow;
                     color: #f33;
@@ -111,7 +121,6 @@ $hig1:30px;
                         background-position-x: -173px;
                     }
                 }
-
                 &:first-child::after {
                     content: "";
                     float: right;
@@ -120,9 +129,7 @@ $hig1:30px;
                     background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/comm/global_009.png") no-repeat;
                     margin: 22px 0 21px 5px;
                     background-position: -166px -14px;
-                }
-
-               
+                }       
             }
             .wd::before{
                 content: "";

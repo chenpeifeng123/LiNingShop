@@ -1,0 +1,446 @@
+{
+    "lbt": [
+        "./images/c1.jpg",
+        "./images/c2.jpg",
+        "./images/c3.jpg",
+        "./images/c4.jpg",
+        "./images/c5.jpg"
+    ],
+    "shop1": [
+        {
+            "id": "1001",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201905/480210/display_480210_1.jpg",
+            "info": "星球大战联名系列男子短袖文化衫",
+            "price": "98"
+        },
+        {
+            "id": "1002",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201811/438197/display_438197_1.jpg",
+            "info": "运动时尚系列男子短袖文化衫",
+            "price": "78"
+        },
+        {
+            "id": "1003",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201803/380785/display_380785_1.jpg",
+            "info": "BADFIVE篮球系列男子短袖POLO衫",
+            "price": "89"
+        },
+        {
+            "id": "1004",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201907/493598/display_493598_1.jpg",
+            "info": "Superwave男子经典休闲鞋",
+            "price": "258"
+        },
+        {
+            "id": "1005",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201905/479234/display_479234_1.jpg",
+            "info": "男子减震经典休闲鞋",
+            "price": "178"
+        },
+        {
+            "id": "1006",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201904/472784/display_472784_1.jpg",
+            "info": "迪士尼米奇联名款女子宽松短袖文化衫",
+            "price": "98"
+        },
+        {
+            "id": "1007",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201902/459832/display_459832_1.jpg",
+            "info": "运动时尚系列女子短袖文化衫",
+            "price": "68"
+        },
+        {
+            "id": "1008",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201904/474587/display_474587_1.jpg",
+            "info": "迪士尼米奇联名款女子短袖文化衫",
+            "price": "118"
+        },
+        {
+            "id": "1009",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201909/501706/display_501706_1.jpg",
+            "info": "女子经典休闲鞋",
+            "price": "158"
+        },
+        {
+            "id": "1010",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564698/display_564698_1.jpg",
+            "info": "女子小白鞋减震经典休闲鞋",
+            "price": "278"
+        }
+    ],
+    "tab1": [
+        "男生",
+        {
+            "id": "1011",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202005/567330/display_567330_1.jpg",
+            "info": "李宁CF The one系列漫游音浪男子经典...",
+            "price": "238",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1012",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201912/518998/display_518998_1.jpg",
+            "info": "男子经典休闲鞋",
+            "price": "218",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1013",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201905/481137/display_481137_1.jpg",
+            "info": "李宁CF溯系列璃男子经典休闲鞋",
+            "price": "498",
+            "cutPrice": "41"
+        },
+        {
+            "id": "1014",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202001/529958/display_529958_1.jpg",
+            "info": "光荣2020男子透气经典休闲鞋",
+            "price": "198",
+            "cutPrice": "41"
+        },
+        {
+            "id": "1015",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201911/517029/display_517029_1.jpg",
+            "info": "男子透气经典休闲鞋",
+            "price": "338",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1016",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202006/570522/display_570522_1.jpg",
+            "info": "韦德系列男子短袖文化衫",
+            "price": "58",
+            "cutPrice": "11"
+        },
+        {
+            "id": "1017",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202001/525567/display_525567_1.jpg",
+            "info": "篮球系列男子宽松短袖文化衫",
+            "price": "78",
+            "cutPrice": "11"
+        },
+        {
+            "id": "1018",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202004/554174/display_554174_1.jpg",
+            "info": "篮球系列男子短袖T恤",
+            "price": "68",
+            "cutPrice": "11"
+        },
+        {
+            "id": "1019",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201904/474628/display_474628_1.jpg",
+            "info": "迪士尼米奇联名款男女同款短袖文化衫",
+            "price": "98",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1020",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201904/472431/display_472431_1.jpg",
+            "info": "迪士尼米奇联名款男女同款宽松短袖文化衫",
+            "price": "138",
+            "cutPrice": "21"
+        }
+    ],
+    "tab2": [
+        "女生",
+        {
+            "id": "1021",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202003/538758/display_538758_1.jpg",
+            "info": "李宁CF Contrarian 2020女子...",
+            "price": "198",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1022",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202003/539010/display_539010_1.jpg",
+            "info": "女子潮流休闲鞋",
+            "price": "238",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1023",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202004/559539/display_559539_1.jpg",
+            "info": "女子经典休闲鞋",
+            "price": "238",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1024",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201912/519052/display_519052_1.jpg",
+            "info": "女子减震回弹经典休闲鞋",
+            "price": "238",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1025",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202004/563211/display_563211_1.jpg",
+            "info": "李宁CF溯系列飞羽女子潮流休闲鞋",
+            "price": "318",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1026",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202001/529331/display_529331_1.jpg",
+            "info": "迪士尼米奇联名款女子宽松短袖文化衫",
+            "price": "118",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1027",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565782/display_565782_1.jpg",
+            "info": "运动时尚系列女子短袖文化衫",
+            "price": "68",
+            "cutPrice": "11"
+        },
+        {
+            "id": "1028",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201902/459823/display_459823_1.jpg",
+            "info": "运动时尚系列女子短袖文化衫",
+            "price": "68",
+            "cutPrice": "11"
+        },
+        {
+            "id": "1029",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/202004/559806/display_559806_1.jpg",
+            "info": "迪士尼米奇联名款女子宽松短袖T恤",
+            "price": "98",
+            "cutPrice": "21"
+        },
+        {
+            "id": "1030",
+            "imgSrc": "https://cdns.lining.com/postsystem/docroot/images/goods/201903/466671/display_466671_1.jpg",
+            "info": "BAD FIVE篮球系列女子短袖文化衫",
+            "price": "68",
+            "cutPrice": "11"
+        }
+    ],
+    "list1": [
+        {
+            "id": "1031",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202002/536592/thumb_536592.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202002/536582/thumb_536582.jpg"
+            ],
+            "info": "【华晨宇同款】巴黎时装周中国李宁2020秋冬系列走秀款男女同款收口宽松运动长裤",
+            "price": "699.00"
+        },
+        {
+            "id": "1032",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527593/thumb_527593.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子宽松套头连帽卫衣",
+            "price": "899.00"
+        },
+        {
+            "id": "1033",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202002/536602/thumb_536602.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202002/536612/thumb_536612.jpg"
+            ],
+            "info": "【华晨宇同款】巴黎时装周中国李宁2020秋冬系列走秀款男女同款宽松夹克",
+            "price": "1299.00"
+        },
+        {
+            "id": "1034",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527983/thumb_527983.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527973/thumb_527973.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子宽松套头卫衣",
+            "price": "799.00"
+        },
+        {
+            "id": "1035",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/528013/thumb_528013.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527993/thumb_527993.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/528003/thumb_528003.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子长袖文化衫",
+            "price": "399.00"
+        },
+        {
+            "id": "1036",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/528033/thumb_528033.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子短棉服",
+            "price": "2199.00"
+        },
+        {
+            "id": "1037",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527613/thumb_527613.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527603/thumb_527603.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子时尚宽松套头卫衣",
+            "price": "599.00"
+        },
+        {
+            "id": "1038",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527473/thumb_527473.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527483/thumb_527483.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子宽松短袖文化衫",
+            "price": "339.00"
+        },
+        {
+            "id": "1039",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527533/thumb_527533.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527523/thumb_527523.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/527543/thumb_527543.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020秋冬系列男子宽松套头连帽卫衣",
+            "price": "699.00"
+        },
+        {
+            "id": "1040",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202006/574440/thumb_574440.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202006/574420/thumb_574420.jpg"
+            ],
+            "info": "【2020新品】巴黎时装周中国李宁2020春夏系列男子时尚宽松运动风衣",
+            "price": "699.00"
+        },
+        {
+            "id": "1041",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/567833/thumb_567833.jpg"
+            ],
+            "info": "【2020新品】巴黎时装周中国李宁2020春夏系列男子平口宽松休闲短裤",
+            "price": "539.00"
+        },
+        {
+            "id": "1042",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565232/thumb_565232.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565222/thumb_565222.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子时尚常规短袖文化衫",
+            "price": "299.00"
+        },
+        {
+            "id": "1043",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565252/thumb_565252.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565643/thumb_565643.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子短卫裤",
+            "price": "439.00"
+        },
+        {
+            "id": "1044",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565242/thumb_565242.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/565433/thumb_565433.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子短袖文化衫",
+            "price": "299.00"
+        },
+        {
+            "id": "1045",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564205/thumb_564205.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564195/thumb_564195.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子短袖文化衫",
+            "price": "299.00"
+        },
+        {
+            "id": "1046",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564245/thumb_564245.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子短袖文化衫",
+            "price": "299.00"
+        },
+        {
+            "id": "1047",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564235/thumb_564235.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564215/thumb_564215.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202005/564225/thumb_564225.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子时尚常规短袖文化衫",
+            "price": "299.00"
+        },
+        {
+            "id": "1048",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/561423/thumb_561423.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/559085/thumb_559085.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/563490/thumb_563490.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子宽松短袖文化衫",
+            "price": "399.00"
+        },
+        {
+            "id": "1049",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/561500/thumb_561500.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/561463/thumb_561463.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子宽松短袖文化衫",
+            "price": "339.00"
+        },
+        {
+            "id": "1050",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/560918/thumb_560918.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/560908/thumb_560908.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/562100/thumb_562100.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子宽松短袖文化衫",
+            "price": "339.00"
+        },
+        {
+            "id": "1051",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/560527/thumb_560527.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子时尚宽松短卫裤",
+            "price": "399.00"
+        },
+        {
+            "id": "1052",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/558582/thumb_558582.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/558572/thumb_558572.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列男子短袖POLO衫",
+            "price": "439.00"
+        },
+        {
+            "id": "1053",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202006/571553/thumb_571553.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/524838/thumb_524838.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202001/528301/thumb_528301.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列猫爪男子潮流休闲鞋",
+            "price": "899.00"
+        },
+        {
+            "id": "1054",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/558543/thumb_558543.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/553804/thumb_553804.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/558553/thumb_558553.jpg"
+            ],
+            "info": "【华晨宇心选】巴黎时装周中国李宁2020春夏系列男子短袖文化衫",
+            "price": "239.00"
+        },
+        {
+            "id": "1055",
+            "imgSrc": [
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202003/538174/thumb_538174.jpg",
+                "https://cdns.lining.com/postsystem/docroot/images/goods/202004/562242/thumb_562242.jpg"
+            ],
+            "info": "巴黎时装周中国李宁2020春夏系列走秀款Bubble Slide女子篮球场下拖鞋",
+            "price": "299.00"
+        }
+    ]
+}

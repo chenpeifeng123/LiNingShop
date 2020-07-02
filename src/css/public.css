@@ -20,6 +20,10 @@ a {
   color: #333;
 }
 
+i, em {
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -31,6 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-size: 16px;
 }
 
 #headers, #ft {
@@ -45,4 +50,16 @@ h6 {
 
 #ft {
   height: 350px;
+}
+
+.bRed {
+  border-color: #f33 !important;
+}
+
+.cloak_on {
+  display: block !important;
+}
+
+.cloak_off {
+  display: none !important;
 }

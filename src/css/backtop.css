@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+i, em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#headers, #ft {
+  width: 100%;
+}
+
+#headers {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#ft {
+  height: 350px;
+}
+
+.bRed {
+  border-color: #f33 !important;
+}
+
+.cloak_on {
+  display: block !important;
+}
+
+.cloak_off {
+  display: none !important;
+}
+
+body {
+  height: 100%;
+}
+
+#backTop {
+  position: fixed;
+  height: 100%;
+  width: 42px;
+  background: #333;
+  top: 0;
+  right: 0;
+  color: snow;
+}
+
+#backTop .btList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#backTop .btList a {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+#backTop .btList a:first-child {
+  flex-grow: 1.5;
+}
+
+#backTop .btList a:last-child {
+  color: #fff;
+  justify-content: flex-start;
+  padding-top: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+#backTop .btList a:last-child span {
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 15px;
+}

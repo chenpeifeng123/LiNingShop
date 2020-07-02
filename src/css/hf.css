@@ -21,6 +21,10 @@ a {
   color: #333;
 }
 
+i, em {
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -32,9 +36,10 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-size: 16px;
 }
 
-#headers, #footers {
+#headers, #ft {
   width: 100%;
 }
 
@@ -44,8 +49,20 @@ h6 {
   z-index: 999;
 }
 
-#footers {
+#ft {
   height: 350px;
+}
+
+.bRed {
+  border-color: #f33 !important;
+}
+
+.cloak_on {
+  display: block !important;
+}
+
+.cloak_off {
+  display: none !important;
 }
 
 .con-f, #header .headerTop {
@@ -73,6 +90,7 @@ h6 {
   vertical-align: middle;
   margin: 10px 15px 10px 0;
   float: left;
+  cursor: pointer;
 }
 
 #header .headerTop .headLeft .headUl {
@@ -82,6 +100,11 @@ h6 {
 
 #header .headerTop .headLeft .headUl li {
   float: left;
+}
+
+#header .headerTop .headLeft .headUl li:first-child a {
+  color: #f33;
+  margin-right: 3px;
 }
 
 #header .headerTop .headLeft .headUl li a {
@@ -100,6 +123,18 @@ h6 {
   margin-top: 10px;
   margin-right: 10px;
   border: none;
+}
+
+#header .headerTop .headLeft .headUl .logOff {
+  display: none;
+  margin-right: 3px;
+}
+
+#header .headerTop .headLeft .cartCount {
+  position: absolute;
+  left: 290px;
+  top: 1px;
+  font-size: 12px;
 }
 
 #header .headerTop .headRight {

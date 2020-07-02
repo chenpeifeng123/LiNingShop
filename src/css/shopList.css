@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+i, em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#headers, #ft {
+  width: 100%;
+}
+
+#headers {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#ft {
+  height: 350px;
+}
+
+.bRed {
+  border-color: #f33 !important;
+}
+
+.cloak_on {
+  display: block !important;
+}
+
+.cloak_off {
+  display: none !important;
+}
+
+#shopList {
+  width: 1260px;
+  margin: 120px auto 0;
+  overflow: hidden;
+}
+
+#shopList .listText {
+  width: 210px;
+  background: #aaa;
+  text-align: center;
+}
+
+#shopList .listText .texts, #shopList .listText h2, #shopList .listText .little .title {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#shopList .listText h2 {
+  background: #ed2738;
+  cursor: pointer;
+}
+
+#shopList .listText .little .title {
+  background: #1d1d1d;
+}
+
+#shopList .listText .little .lists {
+  color: #333;
+  overflow: hidden;
+  background: #e7e7e7;
+  padding: 12px 6px 12px 8px;
+}
+
+#shopList .listText .little .lists a {
+  width: 95px;
+  height: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+  float: left;
+}
+
+#shopList .listText .little .lists a:hover {
+  color: #f33;
+}
+
+#shopList .listShop {
+  width: 1040px;
+  background: #fff;
+}
+
+#shopList .listShop .listTop {
+  width: 100%;
+}
+
+#shopList .listShop .listTop h3 {
+  color: #333;
+  min-height: 20px;
+  overflow: hidden;
+  width: 100%;
+  color: #333;
+  height: 20px;
+  float: left;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 4px 10px 0;
+}
+
+#shopList .listShop .listTop .shopMenu {
+  width: 100%;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1 {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1 .ma, #shopList .listShop .listTop .shopMenu .menu1 p, #shopList .listShop .listTop .shopMenu .menu1 a {
+  float: left;
+  font-size: 12px;
+  color: #666666;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1 p {
+  width: 75px;
+  min-height: 40px;
+  padding-left: 25px;
+  line-height: 40px;
+  background: #f0f0f0;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1 a {
+  height: 20px;
+  margin: 10px 7px 10px 0;
+  line-height: 20px;
+  margin-left: 12px;
+  padding: 0 15px;
+}
+
+#shopList .listShop .listTop .shopMenu .menu1 a:hover {
+  color: #f33;
+}
+
+#shopList .listShop .listMain {
+  width: 100%;
+}
+
+#shopList .listShop .listMain .lmTop {
+  margin-top: 20px;
+  color: #333;
+  width: 100%;
+  height: 40px;
+  background: #f0f0f0;
+  font-size: 12px;
+}
+
+#shopList .listShop .listMain .lmTop p {
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+}
+
+#shopList .listShop .listMain .lmTop .lmtUl li {
+  width: 65px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+}
+
+#shopList .listShop .listMain .lmTop .lmtUl li em {
+  font-size: 12px;
+  font-style: normal;
+  pointer-events: none;
+}
+
+#shopList .listShop .listMain .lmTop .lmtUl li:hover {
+  color: #fff;
+  background: #f33;
+}
+
+#shopList .listShop .listMain .lmTop .lmtUl li:hover em {
+  color: #fff;
+  background: #f33;
+}
+
+#shopList .listShop .listMain .lmTop .lmtUl li.active {
+  color: #fff;
+  background: #f33;
+}
+
+#shopList .listShop .listMain .lmTop .inpBox input {
+  width: 40px;
+  height: 20px;
+  display: block;
+  float: left;
+  padding: 0 5px;
+  margin: 9px 5px;
+  border: none;
+  border: 1px solid #c9c9c9;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  background: #ffffff;
+}
+
+#shopList .listShop .listMain .lmTop .inpBox span {
+  float: left;
+  height: 40px;
+  line-height: 37px;
+}
+
+#shopList .listShop .listMain .lmTop .inpBox .inpBn {
+  width: 40px;
+  height: 20px;
+  float: left;
+  margin: 10px 5px;
+  line-height: 20px;
+  text-align: center;
+  background: #ed2937;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#shopList .listShop .listMain .lmTop .nowList {
+  float: right;
+  padding: 5px;
+  margin: 6px 5px 0 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #666;
+}
+
+#shopList .listShop .listMain .lmBody {
+  width: 100%;
+  overflow: hidden;
+}
+
+#shopList .listShop .listMain .lmBody .lbs {
+  color: #333;
+  width: 208px;
+  height: 323px;
+  margin-top: 10px;
+  float: left;
+}
+
+#shopList .listShop .listMain .lmBody .lbs:hover {
+  background: #ee2737;
+}
+
+#shopList .listShop .listMain .lmBody .lbs:hover span,
+#shopList .listShop .listMain .lmBody .lbs:hover p {
+  color: #fff;
+}
+
+#shopList .listShop .listMain .lmBody .lbs .imgBox {
+  color: #333;
+  cursor: pointer;
+  width: 198px;
+  height: 226px;
+  margin: 5px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+#shopList .listShop .listMain .lmBody .lbs .imgBox .bigImg {
+  margin: 0 10px;
+  width: 166px;
+}
+
+#shopList .listShop .listMain .lmBody .lbs .imgBox .minImg {
+  width: 133px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+#shopList .listShop .listMain .lmBody .lbs .imgBox .minImg img {
+  margin: 8px 5px 5px 0;
+  border: 1px solid #b8b8b8;
+  float: left;
+  width: 37px;
+}
+
+#shopList .listShop .listMain .lmBody .lbs p {
+  color: #333;
+  padding: 0px;
+  height: 35px;
+  padding: 0;
+  margin: 15px 10px 5px;
+  font-size: 12px;
+  word-break: normal;
+}
+
+#shopList .listShop .listMain .lmBody .lbs span {
+  display: block;
+  height: 20px;
+  margin: 8px 10px;
+  text-align: right;
+  line-height: 20px;
+  color: #e71b33;
+  font-weight: bold;
+}
+
+#shopList .listShop .listMain .listFoot {
+  color: #333;
+  width: 100%;
+  height: 35px;
+  background: #f0f0f0;
+  font-size: 12px;
+}
+
+#shopList .listShop .listMain .listFoot .pubilcText, #shopList .listShop .listMain .listFoot .lfText, #shopList .listShop .listMain .listFoot .catalog {
+  height: 35px;
+  float: right;
+  line-height: 35px;
+  margin-right: 10px;
+}
+
+#shopList .listShop .listMain .listFoot .catalog {
+  user-select: none;
+}
+
+#shopList .listShop .listMain .listFoot .catalog i {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#shopList .listShop .listMain .listFoot .catalog i.fontRed {
+  color: #ee2737;
+}
+
+#shopList .listShop .listMain .listFoot .catalog em {
+  height: 35px;
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+#backTop {
+  position: fixed;
+  right: 0;
+  top: 0px;
+  color: #333;
+  user-select: none;
+  height: 100%;
+}

@@ -13,10 +13,13 @@
         <div class="headLeft l">
             <h1></h1>
             <ul class="headUl ">
+                <li class="welcome"><a href="javascript:void(0)"></a></li>
+                <li class="logOff"><a href="javascript:void(0)">注销</a></li>
                 <li><a href="./signIn.html">登录&emsp;|</a></li>
                 <li><a href="./signUp.html">注册&emsp;|&ensp;</a></li>
-                <li><a href="./ShopCart.html"></a></li>
+                <li class="goodCart"><a href="./goodCar.html" target="_blank"></a></li>
             </ul>
+            <span class="cartCount">( 0 )</span>
         </div>
         <div class="headRight r">
             <ul>
@@ -28,7 +31,7 @@
        <div class="nav">
            <h2></h2>
            <ul>
-               <li>所有分类</li>
+               <li class="hCate">所有分类</li>
                <li>男子</li>
                <li>女子</li>
                <li>男童</li>
@@ -48,5 +51,35 @@
            </div>
        </div>
     </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script >
+      (function(){
+        let data=JSON.parse(localStorage.getItem('user'));
+        
+            if(!data||!data.user)return;
+                $('.welcome>a').text(data.user+"，欢迎您")
+                $('.logOff').addClass('cloak_on').nextUntil('.goodCart').addClass('cloak_off');
+                $('.logOff>a').click(function(){
+                    localStorage.clear();
+                    location.reload();
+                })
+            $("h1").click(function(){
+                window.open("./../index.html")
+            })
+
+            $.ajax({
+                url:"../../server/getCartNum.php",
+                data,
+                type:"post",
+                success(res){
+                    $(".cartCount").text(`( ${res} )`);
+                }
+            });
+        
+        // $(".hCate").click(function(){
+        //     location.href='./details.html';
+        // })
+      })()
+    </script>
 </body>
 </html>

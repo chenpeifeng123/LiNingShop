@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
     <link rel="stylesheet" href="./../css/sigInUp.css">
+    <script src="../js/captcha.js"></script>
+    <script src="../js/md5.js"></script>
 </head>
 <body>
     <div>
@@ -14,10 +16,10 @@
         <h1 class="upH1">注册新用户</h1>
         <div class="form">
             <label for="user">
-                <input type="text" id="user" name="user" placeholder="用户名(支持汉字、字母、数组、_4到16位)" ><span>×  支持汉字、字母、数组、_4到16位</span>
+                <input type="text" id="user" name="user" placeholder="用户名(支持汉字、字母、数组、_(4~16位))" ><span>×  支持汉字、字母、数组、_(4~16位)</span>
             </label>
             <label for="pwd">
-                <input type="password" id="pwd" name="pwd" placeholder="密码(首字母不为数字(6到16位))" ><span>× 首字母不为数字(6到16位)</span>
+                <input type="password" id="pwd" name="pwd" placeholder="密码(包含字母和数字且首位不为数字(6到16位))" ><span>× 包含字母、数字且首位不为数字(6~16位)</span>
             </label>
             <label for="repeatPwd">
                 <input type="password" id="repeatPwd"  placeholder="请确认密码" ><span>× 两次输入的密码不一致</span>
@@ -27,7 +29,7 @@
             </label>
             <label for="vCode">
                 <input type="text" id="vCode" class="vCode"  placeholder="验证码"><span></span>
-                <a class="codeText"></a>
+                <div id="cas" class="codeText" > </div>
             </label>
             
             <button class="signInBn"> 会员注册 </button>
@@ -42,12 +44,15 @@
     </div>
     <script src="./../../node_modules/jquery/dist/jquery.js"></script>
     <script type="module">
+       
         $(".inTop>a").eq(0).addClass("active")
         $(".inTop").click("a",function(e){
             $(e.target).addClass("active").siblings().removeClass("active")
         });
         import Login from "./../js/login.js";
         new Login();
+      
+      
     </script>
 </body>
 </html>

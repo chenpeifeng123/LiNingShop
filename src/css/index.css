@@ -20,6 +20,10 @@ a {
   color: #333;
 }
 
+i, em {
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -31,6 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-size: 16px;
 }
 
 #headers, #ft {
@@ -47,8 +52,21 @@ h6 {
   height: 350px;
 }
 
+.bRed {
+  border-color: #f33 !important;
+}
+
+.cloak_on {
+  display: block !important;
+}
+
+.cloak_off {
+  display: none !important;
+}
+
 body {
   width: 100%;
+  height: 100%;
 }
 
 #banner {
@@ -83,24 +101,18 @@ body {
   width: 705px;
   height: 250px;
   margin-left: 20px;
+  overflow: hidden;
 }
 
-#main .main_lbt .lbt ul {
-  width: 20000px;
-  height: 250px;
-  position: absolute;
-  left: 0;
+#main .main_lbt .lbt .carousel-item {
+  transition: 0.5s;
 }
 
-#main .main_lbt .lbt ul li {
-  float: left;
-}
-
-#main .main_lbt .lbt ul li img {
+#main .main_lbt .lbt img {
   height: 250px;
 }
 
-#main .main_lbt .bnTurn a {
+#main .main_lbt a {
   position: absolute;
   width: 50px;
   height: 70px;
@@ -108,12 +120,20 @@ body {
   top: 46%;
 }
 
-#main .main_lbt .bnTurn .bnl {
+#main .main_lbt .prevs {
   left: 262px;
 }
 
-#main .main_lbt .bnTurn .bnr {
+#main .main_lbt .prevs .ps {
+  display: none;
+}
+
+#main .main_lbt .nexts {
   right: 262px;
+}
+
+#main .main_lbt .nexts .ns {
+  display: none;
 }
 
 #main .main_yhj {
@@ -123,20 +143,21 @@ body {
   background-size: 100% 100%;
 }
 
-#main .ma, #main .main_list1 .shopBox a, #main .main_tab .tabBox a {
+#main .ma, #main .main_list1 .shopBox .as, #main .main_tab .tabBox .ta {
   float: left;
   margin: 3px 3px 0 0;
   width: 184px;
   height: 276px;
   background-color: #fff;
   position: relative;
+  text-decoration: none;
 }
 
-#main .ma img, #main .main_list1 .shopBox a img, #main .main_tab .tabBox a img {
+#main .ma img, #main .main_list1 .shopBox .as img, #main .main_tab .tabBox .ta img {
   width: 184px;
 }
 
-#main .ma span, #main .main_list1 .shopBox a span, #main .main_tab .tabBox a span {
+#main .ma span, #main .main_list1 .shopBox .as span, #main .main_tab .tabBox .ta span {
   color: #666;
   font-size: 14px;
   display: block;
@@ -144,7 +165,7 @@ body {
   width: 160px;
 }
 
-#main .ma b, #main .main_list1 .shopBox a b, #main .main_tab .tabBox a b {
+#main .ma b, #main .main_list1 .shopBox .as b, #main .main_tab .tabBox .ta b {
   display: block;
   color: #c91212;
   font-size: 24px;
@@ -154,11 +175,11 @@ body {
   bottom: 24px;
 }
 
-#main .ma b::first-letter, #main .main_list1 .shopBox a b::first-letter, #main .main_tab .tabBox a b::first-letter {
+#main .ma b::first-letter, #main .main_list1 .shopBox .as b::first-letter, #main .main_tab .tabBox .ta b::first-letter {
   font-size: 12px;
 }
 
-#main .ma .shopBa img, #main .main_list1 .shopBox a .shopBa img, #main .main_tab .tabBox a .shopBa img {
+#main .ma .shopBa img, #main .main_list1 .shopBox .as .shopBa img, #main .main_tab .tabBox .ta .shopBa img {
   width: 60px;
   height: 16px;
   float: right;
@@ -176,6 +197,15 @@ body {
 #main .main_list1 .shopBox {
   margin: 120px auto 0;
   width: 996px;
+  position: relative;
+}
+
+#main .main_list1 .shopBox .Shopmore {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  right: 164px;
+  top: -43px;
 }
 
 #main .main_tab {
@@ -183,6 +213,15 @@ body {
   background: url("./../images/bg4.jpg") no-repeat;
   background-size: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+#main .main_tab .Tabmore {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 71%;
+  top: 14.5%;
 }
 
 #main .main_tab .tabBox {
@@ -191,7 +230,7 @@ body {
   display: none;
 }
 
-#main .main_tab .tabBox a .zhiJiang {
+#main .main_tab .tabBox .ta .zhiJiang {
   position: absolute;
   top: 0;
   width: 53px;
@@ -200,8 +239,8 @@ body {
   left: 123px;
 }
 
-#main .main_tab .tabBox a .zhiJiang .zj1,
-#main .main_tab .tabBox a .zhiJiang .zj2 {
+#main .main_tab .tabBox .ta .zhiJiang .zj1,
+#main .main_tab .tabBox .ta .zhiJiang .zj2 {
   font-size: 14px;
   color: #fecf84;
   width: 100%;
@@ -211,7 +250,7 @@ body {
   display: block;
 }
 
-#main .main_tab .tabBox a .zhiJiang .zj2 {
+#main .main_tab .tabBox .ta .zhiJiang .zj2 {
   font-weight: bold;
 }
 
@@ -252,4 +291,13 @@ body {
   height: 328px;
   background: url("./../images/bg.jpg") no-repeat center;
   background-size: cover;
+}
+
+#backTop {
+  position: fixed;
+  right: 0;
+  top: 0px;
+  color: #333;
+  user-select: none;
+  height: 100%;
 }

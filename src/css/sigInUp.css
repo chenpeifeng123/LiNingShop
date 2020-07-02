@@ -21,6 +21,10 @@ a {
   color: #333;
 }
 
+i, em {
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -32,6 +36,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-size: 16px;
 }
 
 #headers, #ft {
@@ -146,18 +151,12 @@ body {
   top: 0;
 }
 
-#signIn .form .codeText {
+#signIn .form #cas {
+  width: 120px;
+  height: 43px;
   position: absolute;
-  right: 7px;
-  border: 1px solid #666;
-  top: 6px;
-  text-align: center;
-  line-height: 33px;
-  color: purple;
-  width: 85px;
-  height: 33px;
-  user-select: none;
-  cursor: pointer;
+  right: 1px;
+  top: 1px;
 }
 
 #signIn .form .sing1 {

@@ -66,6 +66,7 @@ body {
                 padding-left: 16px;
                 color: #555;
                 outline: none;
+                
                 &+span{
                     color: #f33;
                     font-size: 14px;
@@ -93,19 +94,14 @@ body {
                 top: 0;
             }
         }
-        .codeText{
+        #cas{
+            width: 120px;
+            height: 43px;
             position: absolute;
-            right: 7px;
-            border: 1px solid #666;
-            top: 6px;
-            text-align: center;
-            line-height: 33px;
-            color: purple;
-            width: 85px;
-            height: 33px;
-            user-select: none;
-            cursor: pointer;
+            right: 1px;
+            top: 1px;
         }
+        
         .sing1 {
             color: #808080;
             font-size: 15px;
