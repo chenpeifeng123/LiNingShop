@@ -45,7 +45,7 @@ h6 {
 #headers {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 1111;
 }
 
 #ft {
@@ -70,10 +70,10 @@ body {
 
 #backTop {
   position: fixed;
-  height: 100%;
+  height: calc(100% - 80px);
   width: 42px;
-  background: #333;
-  top: 0;
+  background: #000;
+  top: 80px;
   right: 0;
   color: snow;
 }
@@ -86,14 +86,20 @@ body {
 
 #backTop .btList a {
   display: flex;
-  flex-grow: 1;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #aaa;
+  height: 55px;
 }
 
 #backTop .btList a:first-child {
-  flex-grow: 1.5;
+  height: 60px;
+}
+
+#backTop .btList a:first-child .logos {
+  position: absolute;
+  right: 42px;
 }
 
 #backTop .btList a:last-child {
@@ -103,6 +109,8 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   visibility: hidden;
+  border-bottom: none;
+  flex-grow: 1;
 }
 
 #backTop .btList a:last-child span {
@@ -112,4 +120,187 @@ body {
   text-align: center;
   font-size: 12px;
   padding-top: 15px;
+}
+
+#backTop .btList a .myLining {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 61px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .myLining p {
+  padding-top: 13px;
+}
+
+#backTop .btList a .gcar {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 117px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .gcar p {
+  padding-top: 20px;
+}
+
+#backTop .btList a .prope {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 173px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .prope p {
+  padding-top: 13px;
+}
+
+#backTop .btList a .coll {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 229px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .coll p {
+  padding-top: 13px;
+}
+
+#backTop .btList a .browse {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 285px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .browse p {
+  padding-top: 13px;
+}
+
+#backTop .btList a .cust {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 341px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .cust p {
+  padding-top: 20px;
+}
+
+#backTop .btList a .scan {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 0;
+  top: 397px;
+  color: white;
+  text-align: center;
+  width: 42px;
+  background: #e65f5f;
+  height: 55px;
+  border-radius: 1px;
+  font-size: 12px;
+  display: none;
+}
+
+#backTop .btList a .scan p {
+  padding-top: 13px;
+}
+
+#backTop .btList .gcarNum {
+  flex-direction: column;
+}
+
+#backTop .btList .gcarNum span {
+  background: #f33;
+  font-size: 12px;
+  color: #fff;
+  margin: 2px 0 0 6px;
+  line-height: 12px;
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+}
+
+#backTop .logos {
+  width: 19px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  z-index: 900;
+}
+
+.hide {
+  display: block;
+}
+
+.toggleLogo {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 899;
+  display: none;
+}
+
+.toggleLogo img {
+  width: 60px;
+  cursor: pointer;
 }

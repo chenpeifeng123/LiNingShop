@@ -20,8 +20,10 @@ export default class goodCar {
           $("tbody").children().not("#kong").remove();
           // 如果商品不存在显示文本
           if (!this.ches) $(".cartNotice").show();
+          $("#goodFoot").removeClass("cloak_off")
         }
         self.data = JSON.parse(res);
+        if(self.data.length===0){$("#goodFoot").addClass("cloak_off")}
         // 如果商品存在隐藏文本
         if (self.data.length !== 0) {
           $(".cartNotice").hide();
@@ -126,17 +128,21 @@ export default class goodCar {
   // 删除操作
   delElement() {
     // 单个
+    
+    if(this.data.length===0)return;
     $(".g_del>a").click((e) => {
       let trp = $(e.target).parents("tr");
       this.changeData("del", trp.attr("index"));
       this.totalPrice();
     });
     // 批量
+   
+   
     $(".gflDelete").click((e) => {
       let b = $("input[type*=che]").not(".checks");
       //  全部删除
       if ($(".checks").prop("checked")) {
-        if (confirm("是否全部删除")) {
+        if (confirm("是否全部删除") ) {
           this.changeData("delAll");
         }
       } else {

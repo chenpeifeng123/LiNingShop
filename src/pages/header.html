@@ -19,7 +19,12 @@
                 <li><a href="./signUp.html">注册&emsp;|&ensp;</a></li>
                 <li class="goodCart"><a href="./goodCar.html" target="_blank"></a></li>
             </ul>
-            <span class="cartCount">( 0 )</span>
+            <span class="cartCount"></span>
+            <div class='minCar'>
+                <div class="clock  cloak_off">
+                    您的购物车中没有商品，先去选购吧！
+                </div>
+            </div>
         </div>
         <div class="headRight r">
             <ul>
@@ -42,7 +47,6 @@
                <li>中国李宁</li>
                <li>更多品牌</li>
            </ul>
-          
             <em></em>
            <div class="search">
             <input type="text"  placeholder="时装周">
@@ -52,34 +56,8 @@
        </div>
     </div>
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
-    <script >
-      (function(){
-        let data=JSON.parse(localStorage.getItem('user'));
-        
-            if(!data||!data.user)return;
-                $('.welcome>a').text(data.user+"，欢迎您")
-                $('.logOff').addClass('cloak_on').nextUntil('.goodCart').addClass('cloak_off');
-                $('.logOff>a').click(function(){
-                    localStorage.clear();
-                    location.reload();
-                })
-            $("h1").click(function(){
-                window.open("./../index.html")
-            })
-
-            $.ajax({
-                url:"../../server/getCartNum.php",
-                data,
-                type:"post",
-                success(res){
-                    $(".cartCount").text(`( ${res} )`);
-                }
-            });
-        
-        // $(".hCate").click(function(){
-        //     location.href='./details.html';
-        // })
-      })()
+    <script src="../js/header.js" >
+      
     </script>
 </body>
 </html>

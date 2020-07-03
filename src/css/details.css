@@ -281,12 +281,3 @@ h6 {
   background: url("https://cdns.lining.com/shop/lining/theme/xth2/images/goods/add_shop_cart.png") no-repeat scroll 0 0 transparent;
   background-color: #222;
 }
-
-#backTop {
-  position: fixed;
-  right: 0;
-  top: 0px;
-  color: #333;
-  user-select: none;
-  height: 100%;
-}

@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="../css/backtop.css"><base target="_parent"></head><body><div id="backTop"><div class="btList"><a class="hideTag" href="javascript:void(0)"><img src="../images/index_bt1.png" alt=""><div class="logos"><img src="https://cdns.lining.com/shop/lining/theme/xth2/images/sidebar/logo.png" alt=""></div></a><a href="javascript:void(0)"><img src="../images/index_bt2.png" alt=""><div class="myLining"><p>我的<br>李宁</p></div></a><a class="gcarNum" href="./goodCar.html"><img src="../images/index_bt3.png" alt=""> <span>0</span><div class="gcar"><p>购物车</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt4.png" alt=""><div class="prope"><p>我的<br>资产</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt5.png" alt=""><div class="coll"><p>我的<br>收藏</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt6.png" alt=""><div class="browse"><p>最近<br>浏览</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt7.png" alt=""><div class="cust"><p>客服</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt8.png" alt=""><div class="scan"><p>扫码<br>送红包</p></div></a><a href="javascript:void(0)"><img src="../images/index_bt9.png" alt=""> <span class="btText">回到顶部</span></a></div></div><div class="toggleLogo"><img src="https://cdns.lining.com/shop/lining/theme/xth2/images/sidebar/hide_bar_3.png" alt=""></div></body><script src="../../node_modules/jquery/dist/jquery.js"></script><script>init();
+      function init(){
+        $(".btList").mouseover($("a").not("a:first,a:last"),mouseBtListA)
+        .mouseleave($("a").not("a:first,a:last"),mouseBtListA)
+      }
+      function mouseBtListA(e){
+        let target=$(e.target);
+        if(e.type==="mouseover"){
+          if(e.target.nodeName!=="A")return;
+          $("a div").hide();
+        target.find("div").show()
+        }else{
+          $("a div").hide();
+        }
+       
+        
+      }</script></html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>详情页面</title><link rel="stylesheet" href="./../css/details.css"></head><body><div class="heads"><iframe class="enter" src="header.html" style="height:100%;pointer-events:none" frameborder="0" scrolling="No" id="headers"></iframe></div><div id="details"><div class="detaBox"><div class="dbLeft"><div class="maxImg"></div><div class="minImg"></div></div><div class="dbxian"></div><div class="dbRight"></div></div></div><div><iframe src="backTop.html" id="backTop" class="backTop" frameborder="0" scrolling="No" style="width:60px"></iframe></div><div><iframe src="footer.html" id="ft" frameborder="0" scrolling="No"></iframe></div><script src="./../../node_modules/jquery/dist/jquery.js"></script><script type="module">import Details from "../js/details.js";
+    import backTop from "../js/backTop.js";
+    new Details();
+    let s = $($(".backTop")[0].contentDocument);
+    new backTop($(window), s);
+
+      //   点击商品跳转页面，url传入id，
+      // 详情页面接收id，发送ajax，
+      // php页面进行id查询，返回商品数据
+
+      //   取数据
+
+      // let arr=[];
+      // let srcs="https://cdns.lining.com/postsystem/docroot/images/goods/202004/558543/display_558543_1.jpg"
+
+      // for(let i=1;i<6;i++){
+      //     let str=i+".jpg";
+      //     let imgsrc=srcs.slice(0,-5)+str;
+      //     arr.push(imgsrc);
+      // }
+      // JSON.stringify(arr);</script></body></html>

@@ -292,12 +292,3 @@ body {
   background: url("./../images/bg.jpg") no-repeat center;
   background-size: cover;
 }
-
-#backTop {
-  position: fixed;
-  right: 0;
-  top: 0px;
-  color: #333;
-  user-select: none;
-  height: 100%;
-}

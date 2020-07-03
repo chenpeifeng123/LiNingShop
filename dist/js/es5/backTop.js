@@ -9,7 +9,7 @@ export default class backTop {
     this.info = info;
     this.init();
     $("#backTop").css({
-      zIndex:999
+      zIndex: 999
     });
   }
   init() {
@@ -21,7 +21,7 @@ export default class backTop {
       background: " transparent",
       position: "fixed",
       top: 0,
-      zIndex: 999,
+      zIndex: 999
     });
     $("#backTop").css({
       position: "fixed",
@@ -29,10 +29,10 @@ export default class backTop {
       top: 0,
       color: "#000",
       userSelect: "none",
-      height: "100%",
+      height: "100%"
     });
-    this.doc.find(".hideTag").click((e) => this.clickHide(e));
-    this.doc.find(".toggleLogo").click((e) => this.clickShow(e));
+    this.doc.find(".hideTag").click(e => this.clickHide(e));
+    this.doc.find(".toggleLogo").click(e => this.clickShow(e));
     this.ajax();
     let header = $($(".enter")[0].contentDocument);
     $(".heads").mouseenter(this.mouseHandler);
@@ -41,7 +41,7 @@ export default class backTop {
   // 监听滚轮事件函数
   scrollHandler() {
     if (this.win.scrollTop() >= this.win[0].outerHeight / 2) {
-      this.doc.find("a:last").css("visibility", "visible");      
+      this.doc.find("a:last").css("visibility", "visible");
     } else {
       this.doc.find("a:last").css("visibility", "hidden");
     }
@@ -78,18 +78,18 @@ export default class backTop {
       type: "post",
       success(res) {
         self.doc.find(".gcarNum span").text(res ? JSON.parse(res).length : 0);
-      },
+      }
     });
   }
 
   mouseHandler(e) {
     if (e.type === "mouseenter") {
       $(".enter").css({
-        pointerEvents: "auto",
+        pointerEvents: "auto"
       });
-    }else if((e.type === "mouseleave")){
+    } else if (e.type === "mouseleave") {
       $(".enter").css({
-        pointerEvents: "none",
+        pointerEvents: "none"
       });
     }
   }

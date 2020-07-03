@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="./css/index.css"><link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css"></head><body><div class="heads"><iframe class="enter" src="./pages/header.html" style="height:100%;pointer-events:none" frameborder="0" scrolling="No" id="headers"></iframe></div><div id="banner"><img src="./images/banner.jpg" alt=""></div><div id="main"><div id="carouselExampleControls" class="carousel slide main_lbt" data-ride="carousel"><div class="carousel-inner lbt"></div><a class="carousel-control-prev prevs" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon ps" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a><a class="carousel-control-next nexts" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon ns" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div><div class="main_yhj"></div><div class="main_list1"></div><div class="main_tab"></div><div class="main_Bottom"></div></div><div><iframe src="./pages/backTop.html" id="backTop" class="backTop" style="pointer-events:auto" frameborder="0" scrolling="No"></iframe></div><div><iframe src="./pages/footer.html" style="pointer-events:auto" id="ft" frameborder="0" scrolling="No"></iframe></div></body><script src="./../node_modules/jquery/dist/jquery.js"></script><script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script><script type="module">import ShopIndex from "./js/index.js";
+    import backTop from "./js/backTop.js";
+    $.ajax({
+        url:"./../server/shopLlist.php",
+        success:function(data){
+            let s=new ShopIndex();
+            s.lbt(data.lbt);
+            s.createList(data.shop1,$(".main_list1"))
+            s.createTab($(".main_tab"),data.tab1,data.tab2)
+        }
+    })
+    let s= $($(".backTop")[0].contentDocument);
+    new backTop($(window),s,"i");</script></html>

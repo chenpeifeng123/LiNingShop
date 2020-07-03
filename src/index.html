@@ -6,12 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.css">
-    
 </head>
 
 <body>
-    <div>
-        <iframe src="./pages/header.html" id="headers" frameborder="0" scrolling="No"></iframe>
+    <div class="heads">
+        <iframe class="enter" src="./pages/header.html" style="height:100%;pointer-events:none"  frameborder=0 scrolling="No" id="headers"></iframe>
     </div>
     <!-- banner开始 -->
     <div id="banner">
@@ -47,12 +46,12 @@
         </div>
         
     </div>
-    <div >
-        <iframe src="./pages/backTop.html" id="backTop" class="backTop" frameborder="0"  scrolling="No"></iframe>
+    <div>
+        <iframe src="./pages/backTop.html" id="backTop" class="backTop" style="pointer-events: auto;" frameborder="0"  scrolling="No"></iframe>
     </div>
     <!-- main结束 -->
     <div >
-        <iframe src="./pages/footer.html"  id="ft" frameborder="0" scrolling="No"></iframe>
+        <iframe src="./pages/footer.html" style="pointer-events:auto"  id="ft" frameborder="0" scrolling="No"></iframe>
     </div>
 </body>
 <script src="./../node_modules/jquery/dist/jquery.js" ></script>
@@ -69,7 +68,10 @@
             s.createTab($(".main_tab"),data.tab1,data.tab2)
         }
     })
-   new backTop($(window),$($(".backTop")[0].contentDocument).find("a:last"));
+    let s= $($(".backTop")[0].contentDocument);
+    new backTop($(window),s,"i");
+
+
 </script>
 
 </html>

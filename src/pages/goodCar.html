@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="./../css/goodCar.css" />
 </head>
 <body>
-  <div>
-    <iframe src="./header.html" id="headers" frameborder="0" scrolling="No"></iframe>
-  </div>
+  <div class="heads">
+    <iframe class="enter" src="header.html" style="height:100%;pointer-events:none"  frameborder=0 scrolling="No" id="headers"></iframe>
+</div>
   <div id="goodCar">
     <div class="gcTop">
       <div></div>
@@ -71,7 +71,7 @@
     </div>
   </div>
   <div >
-    <iframe src="backTop.html" id="backTop" class="backTop" frameborder="0"  scrolling="No"></iframe>
+    <iframe src="backTop.html" id="backTop" class="backTop" frameborder="0"  style="width: 60px;" scrolling="No"></iframe>
 </div>
   <div>
     <iframe src="footer.html" id="ft" frameborder="0" scrolling="No"></iframe>
@@ -84,7 +84,8 @@
       let obj = JSON.parse(localStorage.getItem('user'));
       new goodCar(obj.user);
     }
-    new backTop($(window),$($(".backTop")[0].contentDocument).find("a:last"));
+    let s= $($(".backTop")[0].contentDocument);
+   new backTop($(window),s);
   </script>
 </body>
 

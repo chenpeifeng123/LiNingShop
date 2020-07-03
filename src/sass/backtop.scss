@@ -1,28 +1,33 @@
 @import "./public.scss";
-body{
-    height: 100%;
+body {
+  height: 100%;
 }
 #backTop {
   position: fixed;
-  height: 100%;
+  height: calc(100% - 80px);
   width: 42px;
-  background: #333;
-  top: 0;
+  background: #000;
+  top: 80px;
   right: 0;
   color: snow;
+
   .btList {
     height: 100%;
     display: flex;
     flex-direction: column;
     a {
       display: flex;
-      flex-grow: 1;
+      cursor: pointer;
       justify-content: center;
       align-items: center;
-      border-bottom: 1px solid #fff;
-      
+      border-bottom: 1px solid #aaa;
+      height: 55px;
       &:first-child {
-        flex-grow: 1.5;
+        height: 60px;
+        .logos{
+          position: absolute;
+          right: 42px;
+        }
       }
       &:last-child {
         color: #fff;
@@ -32,7 +37,8 @@ body{
         flex-direction: column;
         box-sizing: border-box;
         visibility: hidden;
-        // flex-grow: 1.5;
+        border-bottom: none;
+        flex-grow: 1;
         span {
           cursor: pointer;
           user-select: none;
@@ -40,9 +46,86 @@ body{
           text-align: center;
           font-size: 12px;
           padding-top: 15px;
-         
         }
       }
+      @mixin tags($t, $h: 55px, $tp: 13px) {
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        left: 0;
+        top: $t;
+        color: white;
+        text-align: center;
+        width: 42px;
+        background: #e65f5f;
+        height: $h;
+        border-radius: 1px;
+        font-size: 12px;
+        display: none;
+        p {
+          padding-top: $tp;
+        }
+      }
+      .myLining {
+        @include tags(61px);
+      }
+      .gcar {
+        @include tags(117px, 55px, 20px);
+      }
+
+      .prope {
+        @include tags(116px+55px+2px);
+      }
+      .coll {
+        @include tags(116px+ (55px * 2)+3px);
+      }
+      .browse {
+        @include tags(116px+ (55px * 3)+4px);
+      }
+      .cust {
+        @include tags(116px+ (55px * 4)+5px, 55px, 20px);
+      }
+      .scan {
+        @include tags(116px+ (55px * 5)+6px);
+      }
     }
+    .gcarNum {
+      flex-direction: column;
+      span {
+        background: #f33;
+        font-size: 12px;
+        color: #fff;
+        margin:2px 0 0 6px;
+        line-height: 12px;
+        text-align: center;
+        width:14px;
+        height: 14px;
+        border-radius: 50%;
+        display: block;
+      }
+    }
+  }
+  .logos {
+    width: 19px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    // top: cacl(50%-30px);
+    z-index: 900;
+  }
+}
+.hide {
+  display: block;
+}
+.toggleLogo {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 899;
+  display: none;
+  img {
+    width: 60px;
+    cursor: pointer;
   }
 }
