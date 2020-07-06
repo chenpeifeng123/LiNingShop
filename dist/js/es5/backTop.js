@@ -81,13 +81,15 @@ export default class backTop {
       }
     });
   }
-
   mouseHandler(e) {
     if (e.type === "mouseenter") {
+
       $(".enter").css({
         pointerEvents: "auto"
+
       });
     } else if (e.type === "mouseleave") {
+
       $(".enter").css({
         pointerEvents: "none"
       });

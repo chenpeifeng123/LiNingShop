@@ -1,9 +1,11 @@
 export default class shopList {
-  idx=0;
+  idx;
   totalPages;
-  info="";
+  info;
   constructor(url) {
     this.url = url;
+    this.idx=0;
+    this.info=""
     this.ajax();
     $(".lmtUl").click("li", this.ascPrice.bind(this));
     this.getPages()

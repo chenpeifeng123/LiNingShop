@@ -142,9 +142,9 @@ export default class goodCar {
       let b = $("input[type*=che]").not(".checks");
       //  全部删除
       if ($(".checks").prop("checked")) {
-        if (confirm("是否全部删除") ) {
+       
           this.changeData("delAll");
-        }
+        
       } else {
         // 批量
         $.each(b, (i, item) => {
@@ -155,6 +155,7 @@ export default class goodCar {
       }
       this.totalPrice();
     });
+    // location.reload()
   }
 
   // 全选

@@ -2,13 +2,14 @@ import Step from "./../js/step.js";
 import Magnifier from "./../js/magnifier.js";
 export default class Details {
   good_id;
-  obj = {};
+  obj;
+  cate;
   constructor() {
     let ids = location.search.slice(7) % 5;
     if (ids === 0) ids = 5;
     ids = 1000 + ids;
     this.good_id = ids;
-
+    this.cate = [];
     this.getAjaxData(ids);
     this.initStroge();
   }
@@ -60,7 +61,7 @@ export default class Details {
     $(".maxImg").on("mouseenter", Magnifier.mouseHandler);
     $(".minImg").html(minImg).mouseover("img", Magnifier.mouseImg);
   }
-  cate = [];
+
   //   右边
   createRightInfo(data) {
     let srcs = JSON.parse(data.src);
@@ -98,8 +99,22 @@ export default class Details {
          <button  class="add">+</button>
      </div>
      <div class="bns">
-         <div></div>
-         <div class="addCar"></div>
+         <div class="bns1"></div>
+         <div class="addCar bns1"></div>
+         <div class="popup">
+            <span class="addText">加入购物车成功</span>
+            <img src="${JSON.parse(data.minSrc)[0]}">
+            <div class="addShops">
+              
+              <b>${data.info}</b>
+              <span>加入数量：<em>${data.num}</em></span>
+              <span>总计金额：<em>￥${data.num * data.price}</em></span>
+            </div>
+            <div class="clickBn">
+              <a class="gw" href="javascript:void(0)">继续购物</a>
+              <a class="gwc" href="../pages/goodCar.html">前往购物车</a>
+            </div>
+         </div>
      </div>
     `).appendTo(".dbRight");
     srcs.map((item) => {
@@ -157,25 +172,38 @@ export default class Details {
     o.liIndex = this.cate[this.obj.liIndex];
     o.num = this.obj.num;
     o.good_id = this.good_id;
-    console.log(o);
     if (!o.user) {
       alert("未登录,跳转登录页面");
       location.href = "./../pages/signIn.html";
       return;
     }
+    let self = this;
     // post请求需要设置请求头
     $.ajax({
       url: "./../../server/addCart.php",
       data: o,
-      headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       success(res) {
-        
-        if (!res) {
-          alert("加入购物车成功");
-        }else{
-          alert("加入购物车失败！")
-        }
+        self.Popup();
+        // if (!res) {
+        //   alert("加入购物车成功");
+
+        //   location.reload()
+        // }else{
+        //   alert("加入购物车失败！")
+        // }
       },
     });
+  }
+  Popup(bool) {
+    let msg = "加入购物车成功";
+    $(".popup").addClass("cloak_on");
+    $(".gw").click(this.clickGw);
+    // location.reload()
+    $(".addText").text(msg);
+  }
+  clickGw() {
+    location.reload();
+    $(".popup").addClass("cloak_off");
   }
 }

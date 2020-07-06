@@ -71,7 +71,6 @@ $(function(){
             $(".clock").removeClass("cloak_off").css("font-size","12px");
             $(".totalPrice").addClass("cloak_off")
         }
-      
     }
 
   })()

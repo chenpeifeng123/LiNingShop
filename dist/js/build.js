@@ -81,17 +81,21 @@ export default class backTop {
       },
     });
   }
-
   mouseHandler(e) {
     if (e.type === "mouseenter") {
+     
+      
       $(".enter").css({
         pointerEvents: "auto",
+        
       });
     }else if((e.type === "mouseleave")){
+     
       $(".enter").css({
         pointerEvents: "none",
       });
     }
+   
   }
 }
 
@@ -238,13 +242,14 @@ import Step from "./../js/step.js";
 import Magnifier from "./../js/magnifier.js";
 export default class Details {
   good_id;
-  obj = {};
+  obj;
+  cate;
   constructor() {
     let ids = location.search.slice(7) % 5;
     if (ids === 0) ids = 5;
     ids = 1000 + ids;
     this.good_id = ids;
-
+    this.cate=[];
     this.getAjaxData(ids);
     this.initStroge();
   }
@@ -296,7 +301,7 @@ export default class Details {
     $(".maxImg").on("mouseenter", Magnifier.mouseHandler);
     $(".minImg").html(minImg).mouseover("img", Magnifier.mouseImg);
   }
-  cate = [];
+
   //   右边
   createRightInfo(data) {
     let srcs = JSON.parse(data.src);
@@ -408,6 +413,7 @@ export default class Details {
         
         if (!res) {
           alert("加入购物车成功");
+          location.reload()
         }else{
           alert("加入购物车失败！")
         }
@@ -560,9 +566,9 @@ export default class goodCar {
       let b = $("input[type*=che]").not(".checks");
       //  全部删除
       if ($(".checks").prop("checked")) {
-        if (confirm("是否全部删除") ) {
+       
           this.changeData("delAll");
-        }
+        
       } else {
         // 批量
         $.each(b, (i, item) => {
@@ -714,7 +720,6 @@ $(function(){
             $(".clock").removeClass("cloak_off").css("font-size","12px");
             $(".totalPrice").addClass("cloak_off")
         }
-      
     }
 
   })()
@@ -864,7 +869,7 @@ export default class Login {
         return value;
       },{})
     //  加密
-      o.pwd= md5($("#password").val()).substr(0,10)
+      o.pwd= md5($("#pwd").val()).substr(0,10)
   
     $.ajax({
       url: "./../../server/login.php?type=" + this.iden,
@@ -875,12 +880,10 @@ export default class Login {
         alert(s.msg);
         $("#verifyCanvas").trigger("click")
         if(s.status !== "error") self.changeStatus({"user":o.user});
-       
-      },
+      }
     });
   }
   changeStatus(data) {
-      
       let href = "signIn.html";
       if (this.iden) {
         href = "../index.html";
@@ -1226,11 +1229,13 @@ export default class Magnifier {
 })(this)
 
 export default class shopList {
-  idx=0;
+  idx;
   totalPages;
-  info="";
+  info;
   constructor(url) {
     this.url = url;
+    this.idx=0;
+    this.info=""
     this.ajax();
     $(".lmtUl").click("li", this.ascPrice.bind(this));
     this.getPages()
@@ -1382,27 +1387,30 @@ export default class shopList {
 }
 
 export default class Step{
-    value=1;
+    value;
     ids;
     constructor(add,sub,inp,a) {
         this.add=add;
         this.sub=sub;
         this.inp=inp;
+        this.value=1;
         this.add.click(this.clickHandler.bind(this));    
         this.sub.click(this.clickHandler.bind(this));    
         this.inp.on("input",this.inputHandler.bind(this));
-        if(!a){
-            // 详情页
-            let data=localStorage.getItem('user');
-            if(data){
-            data=JSON.parse(data);
-            this.value=data.num;
-            }
-        }else{
-            // 购物车
-            this.value=this.inp.val()
-            // 每次取到的都是当前输入框的值
-        }
+        // if(!a){
+        //     // 详情页
+
+        //     let data=localStorage.getItem('user');
+        //     if(data){
+        //     data=JSON.parse(data);
+        //     this.value=data.num;
+        //     }
+        // }else{
+        //     // 购物车
+        //     this.value=this.inp.val()
+        //     // 每次取到的都是当前输入框的值
+        // }
+        this.value=this.inp.val()
     }
     clickHandler(e){
         let target=$(e.target);

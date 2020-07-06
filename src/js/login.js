@@ -77,7 +77,7 @@ export default class Login {
         return value;
       },{})
     //  加密
-      o.pwd= md5($("#password").val()).substr(0,10)
+      o.pwd= md5($("#pwd").val()).substr(0,10)
   
     $.ajax({
       url: "./../../server/login.php?type=" + this.iden,
@@ -88,12 +88,10 @@ export default class Login {
         alert(s.msg);
         $("#verifyCanvas").trigger("click")
         if(s.status !== "error") self.changeStatus({"user":o.user});
-       
-      },
+      }
     });
   }
   changeStatus(data) {
-      
       let href = "signIn.html";
       if (this.iden) {
         href = "../index.html";

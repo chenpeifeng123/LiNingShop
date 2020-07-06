@@ -1,25 +1,28 @@
 export default class Step{
-    value=1;
+    value;
     ids;
     constructor(add,sub,inp,a) {
         this.add=add;
         this.sub=sub;
         this.inp=inp;
+        this.value=1;
         this.add.click(this.clickHandler.bind(this));    
         this.sub.click(this.clickHandler.bind(this));    
         this.inp.on("input",this.inputHandler.bind(this));
-        if(!a){
-            // 详情页
-            let data=localStorage.getItem('user');
-            if(data){
-            data=JSON.parse(data);
-            this.value=data.num;
-            }
-        }else{
-            // 购物车
-            this.value=this.inp.val()
-            // 每次取到的都是当前输入框的值
-        }
+        // if(!a){
+        //     // 详情页
+
+        //     let data=localStorage.getItem('user');
+        //     if(data){
+        //     data=JSON.parse(data);
+        //     this.value=data.num;
+        //     }
+        // }else{
+        //     // 购物车
+        //     this.value=this.inp.val()
+        //     // 每次取到的都是当前输入框的值
+        // }
+        this.value=this.inp.val()
     }
     clickHandler(e){
         let target=$(e.target);
